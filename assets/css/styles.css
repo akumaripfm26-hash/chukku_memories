@@ -1,0 +1,41 @@
+.friend-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .friend-icons {
+    grid-template-columns: 1fr;
+  }
+}
+
+.friend-icon {
+  background-color: #D4E8D4;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.friend-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.7);
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: #F5F1E8;
+  color: #2D2D2D;
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2D2D2D;
+}
+
+.accent {
+  color: #D4AF37;
+}
