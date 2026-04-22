@@ -1,0 +1,27 @@
+.container {
+    background-color: #F5F1E8;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #2D2D2D;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+}
+
+.friend-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.friend-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.accent {
+    background-color: #D4E8D4;
+}
+
+.highlight {
+    background-color: #E8D4D1;
+}
