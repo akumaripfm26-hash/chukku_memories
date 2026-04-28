@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palak's World | chuku.memories</title>
+    <style>
+        :root {
+            --forest-green: #2d5a27;
+            --warm-cream: #fdfaf5;
+            --text-gray: #555;
+        }
+
+        body { 
+            font-family: 'Georgia', serif; 
+            background-color: var(--warm-cream); 
+            color: var(--forest-green); 
+            margin: 0; 
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .back-nav {
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            background: rgba(253, 250, 245, 0.9);
+            z-index: 1000;
+        }
+
+        .back-nav a {
+            text-decoration: none;
+            color: var(--forest-green);
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Header Section */
+        .world-header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .friend-profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--forest-green);
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .intro-text {
+            max-width: 600px;
+            margin: auto;
+            font-style: italic;
+            color: var(--text-gray);
+        }
+
+        /* Timeline Section */
+        .timeline {
+            max-width: 800px;
+            margin: 50px auto;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: var(--forest-green);
+            transform: translateX(-50%);
+        }
+
+        .memory-item {
+            width: 45%;
+            margin-bottom: 50px;
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Alternating left and right */
+        .memory-item.left { float: left; clear: both; }
+        .memory-item.right { float: right; clear: both; }
+
+        .memory-item::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            width: 16px;
+            height: 16px;
+            background: var(--forest-green);
+            border: 4px solid var(--warm-cream);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .memory-item.left::after { right: -36px; }
+        .memory-item.right::after { left: -36px; }
+
+        .memory-date {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #888;
+        }
+
+        .memory-item h3 { margin: 0 0 10px 0; font-size: 1.4rem; }
+        
+        .memory-item img, .memory-item video {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        /* Clearfix for the floating items */
+        .timeline::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before { left: 20px; }
+            .memory-item { width: 90%; float: right !important; }
+            .memory-item::after { left: -28px !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="back-nav">
+        <a href="index.html">← BACK TO CHUKKA</a>
+    </nav>
+
+    <header class="world-header">
+        <img src="https://drive.google.com/drive/folders/1isa3MZW22DFit-eB_9ur5X4ff7BCv38l?usp=drive_link" alt="Palak" class="friend-profile-img">
+        <h1>Palak's World</h1>
+        <p class="intro-text">
+            "To the one who made class a tad bit interesting. Here is our story."
+        </p>
+    </header>
+<p> To Arushi,</p>
+<p>Hi, this section is for you, and us it contains all photos in sequential order, all photos which tells the story of knowing you as arushi to calling you as palak.</p>
+<p>At first, I didn't thought we would be friends, tu anushka CTF mei the and dogs ki baatein krte the, and I was not able to relate. So mujhe lga apn dost nhi bn paayenge. But I guess being in section 1, and QT did some ice breaking 😂. Ohh, trekking kaise bhul skte h, mid k ek din pehle 😂. I know ki it's bit cliche but still let me tell you in my words, you are an amazing person, a very fun person to hangout with, the most adventurous kind, the very challable kind (haa chl dete h na types). 
+<p>But I wish you were a bit more sharing to us, not as in gossips or tea, but your problems and doubts, just don't sit with ur problems alone. Hm jyada solution toh de nhi paayenge but still hm tera saath baith k mn halka kr skte h. Tujhe hm sirf khush dekhna chahta, be it anyone or anything in your life, don't deal with it alone. I know ki tu Nero k wajah se hmare saath nhi rehti, but still the bond remains the same. Anyways, hope that you achieve everything u desire.</p>
+    
+
+    <footer style="text-align: center; padding: 50px; color: #aaa; font-size: 0.8rem;">
+        Made with ♥ for Palak.
+    </footer>
+
+</body>
+</html>
