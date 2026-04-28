@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kun's World | chuku.memories</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        :root { --forest-green: #2d5a27; --warm-cream: #fdfaf5; }
+        body { font-family: 'Georgia', serif; background-color: var(--warm-cream); color: var(--forest-green); margin: 0; line-height: 1.6; }
+        .back-nav { padding: 20px; position: sticky; top: 0; background: rgba(253, 250, 245, 0.9); z-index: 1000; }
+        .back-nav a { text-decoration: none; color: var(--forest-green); font-weight: bold; }
+        .world-header { text-align: center; padding: 40px 20px; }
+        .friend-profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--forest-green); object-fit: cover; box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .timeline { max-width: 800px; margin: 50px auto; position: relative; padding: 0 20px; }
+        .timeline::before { content: ''; position: absolute; left: 50%; width: 2px; height: 100%; background: var(--forest-green); transform: translateX(-50%); }
+        .memory-item { width: 45%; margin-bottom: 50px; position: relative; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .memory-item.left { float: left; clear: both; }
+        .memory-item.right { float: right; clear: both; }
+        .memory-item::after { content: ''; position: absolute; top: 25px; width: 16px; height: 16px; background: var(--forest-green); border: 4px solid var(--warm-cream); border-radius: 50%; z-index: 1; }
+        .memory-item.left::after { right: -36px; }
+        .memory-item.right::after { left: -36px; }
+        img { width: 100%; border-radius: 8px; margin-top: 15px; }
+        .timeline::after { content: ""; display: table; clear: both; }
+    </style>
+</head>
+<body>
+    <nav class="back-nav"><a href="index.html">← BACK TO CHUKKA</a></nav>
+    <header class="world-header">
+        <img src="https://drive.google.com/uc?export=view&id=KUN_ICON_ID" class="friend-profile-img">
+        <h1>Kun's World</h1>
+        <p>"To the partner in every field project and the one who always knew the way through the thickest canopy."</p>
+    </header>
+    <div class="timeline">
+        <div class="memory-item left">
+            <span style="color:#888; font-size:0.8rem; font-weight:bold;">AUG 2024</span>
+            <h3>Day One</h3>
+            <p>The very first time we realized we'd be surviving this batch together.</p>
+            <img src="https://drive.google.com/uc?export=view&id=KUN_PHOTO_1">
+        </div>
+    </div>
+</body>
+</html>
